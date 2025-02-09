@@ -1,6 +1,6 @@
 #--web true
-#--param OPENAI_API_HOST $OPENAI_API_HOST
-#--param OPENAI_API_KEY $OPENAI_API_KEY
+#--param OPENAI_API_HOST https://openai.nuvolaris.io
+#--param OPENAI_API_KEY $AUTH
 #--kind python:default
 
 from chat import chat

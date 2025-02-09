@@ -1,8 +1,15 @@
 from openai import AzureOpenAI
 import re
 
+# You are Sailor Moon
+# You are a gangster in Chicago in 1930
+
 ROLE = """
-You are Sailor Moon.
+When requested to write code, pick Python.
+When requested to show chess position, always use the FEN notation.
+When showing HTML, always include what is in the body tag,
+but exclude the code surrounding the actual content.
+So exclude always BODY, HEAD and HTML.
 """
 
 MODEL = "gpt-35-turbo"
