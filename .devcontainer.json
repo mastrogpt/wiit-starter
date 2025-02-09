@@ -10,5 +10,6 @@
                 "nuvolaris.nuvolaris-vscode-extension"
             ]
         }
-    }
+    },
+    "postCreateCommand": "nuv -update"
 }
