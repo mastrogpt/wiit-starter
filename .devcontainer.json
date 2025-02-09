@@ -3,6 +3,12 @@
     "image": "sciabarracom/mastrogpt-starter:2501191200",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "remoteUser": "node",
+    "containerEnv": {
+        "OPS_BRANCH": "main"
+    },
+    "remoteEnv": {
+        "OPS_BRANCH": "main"
+    },
     "postCreateCommand": "ops -update",
     "customizations": {
         "vscode": {
