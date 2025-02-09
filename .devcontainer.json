@@ -1,15 +1,21 @@
 {
-    "name": "nuvolaris-starter",
-    "image": "ghcr.io/nuvolaris/devcontainer:3.1.0-mastrogpt.2404131430",
-    "runArgs": [
-        "--init"
-    ],
+    "name": "WIIT Starter",
+    "image": "sciabarracom/mastrogpt-starter:2501191200",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "remoteUser": "node",
+    "postCreateCommand": "ops -update",
     "customizations": {
         "vscode": {
             "extensions": [
-                "nuvolaris.nuvolaris-vscode-extension"
+                "pgant.antonio-ops-vscode-extension@1.3.2",
+                "ms-python.python",
+                "ms-vscode.test-adapter-converter",
+                "pamaron.pytest-runner",
+                "marp-team.marp-vscode",
+                "ryuta46.multi-command",
+                "george-alisson.html-preview-vscode",
+                "mathematic.vscode-pdf"
             ]
         }
-    },
-    "postCreateCommand": "nuv -update"
+    }
 }
